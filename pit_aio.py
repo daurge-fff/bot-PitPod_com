@@ -31,7 +31,7 @@ async def echo(message: types.Message):
     await message.answer(message.text)
     
 URL = 'https://docs.aiogram.dev/en/dev-2.x/_static/logo.png'
-#книгу "Как сосать беспаливно"
+#книгу "Как сосать бесплатно"
 @dp.message_handler(commands=['image, img'])
 async def cmd_image(message: types.Message):
     await bot.send_photo(message.chat.id, types.InputFile.from_url(URL))
